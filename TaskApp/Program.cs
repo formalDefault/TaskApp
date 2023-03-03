@@ -35,6 +35,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+var settings = Settings.LoadSettings();
+
+
 //app.UseAuthentication();
 //app.UseIdentityServer();
 app.UseAuthorization();
